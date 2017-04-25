@@ -9,12 +9,25 @@
     
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
     <!--<link href="bootstrap/css/tuto.css" rel="stylesheet">-->
-    <style>
-        [class*="col"] {margin-bottom: 20px;}
-        img {width: 100%;}
-        body {margin-top: 10px;}
-        
+    <style type="text/css">
+        body { 
+            background-color:#DDD; 
+            padding-top: 70px;
+        }
+        [class*="col"] { margin-bottom: 20px; }
+        .form-inline {margin-top: 20px;}
+        img { width: 100%; }
+        .well {
+            background-color:#CCC;
+            padding: 20px;
+        }
+      .inline-form input {
+            display: inline-block;
+            width: 100px;
+        }  
+        a:focus {outline: 0;}
     </style>
+    
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -24,9 +37,43 @@
 </head>
 <body>
     <div class="container">
-        <header class="page-header">
-            <h1>Passion Tigre</h1>
+        
+        <nav class="navbar navbar-inverse navbar-fixed-top" >
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Mon beau site</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Accueil</a></li>
+                    <li><a href="#">Liens</a></li>
+                    <li><a href="#">Témoignages</a></li>
+                    <li><a href="#">Références</a></li>
+                </ul>
+                <form class="navbar-form navbar-right inline-form">
+                    <div class="form-group">
+                        <input type="search" class="input-sm form-control" placeholder="Recherche">
+                        <button type="submit" class="btn btn-primary btn-xs">
+                            <span class="glyphicon glyphicon-eye-open"></span>
+                            Chercher
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </nav>
+        <div class="jumbotron">
+            <div class="container">
+                <h1>Bonjour je suis le Jumbotron</h1>
+                <p>J'aime bien prendre mes aises et occuper tout l'espace pour que l'on me remarque facilement !</p>
+                <p><a class="btn btn-info btn-lg" role="button">En savoir plus  <span class="glyphicon glyphicon glyphicon-hand-right"></span></a></p>
+            </div>
+        </div> 
+        <header class="row">
+            <div class="col-sm-12 col-lg-7">
+                <h1>Passion Tigre</h1>
+            </div>
         </header>
+       
+        
         <div class="col-lg-12">
             <p>
                 Je suis passioné par les <strong>tigres</strong> depuis très longtemps. Ce site a été construit en <em>hommage à ces merveilleux félins...</em><br />
@@ -44,45 +91,91 @@
             </blockquote>
         </div>
         
+        <div class="media col-lg-12">
+            <div class="media-left">
+                <iframe width="420" height="320" src="http://www.youtube.com/embed/VmnIeLmjuHA" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">Un tigre domestique dans son canapé</h4>
+                Admirez ce noble animal...
+            </div>
+        </div>
         
-        <section class="row">
-            <div class="col-xs-4 col-sm-3 col-md-2"><img src="img/t1.jpg" alt="Tigre"></div>
-            <div class="col-xs-4 col-sm-3 col-md-2"><img src="img/t2.jpg" alt="Tigre"></div>
-            <div class="col-xs-4 col-sm-3 col-md-2"><img src="img/t3.jpg" alt="Tigre"></div>
-            <div class="col-xs-4 col-sm-3 col-md-2"><img src="img/t4.jpg" alt="Tigre"></div>
-            <div class="col-xs-4 col-sm-3 col-md-2"><img src="img/t5.jpg" alt="Tigre"></div>
-            <div class="col-xs-4 col-sm-3 col-md-2"><img src="img/t6.jpg" alt="Tigre"></div>
-            <div class="col-xs-4 col-sm-3 col-md-2"><img src="img/t7.jpg" alt="Tigre"></div>
-            <div class="col-xs-4 col-sm-3 col-md-2"><img src="img/t8.jpg" alt="Tigre"></div>
-            <div class="col-xs-4 col-sm-3 col-md-2"><img src="img/t9.jpg" alt="Tigre"></div>
-            <div class="col-xs-4 col-sm-3 col-md-2"><img src="img/t10.jpg" alt="Tigre"></div>
-            <div class="col-xs-4 col-sm-3 col-md-2"><img src="img/t11.jpg" alt="Tigre"></div>
-            <div class="col-xs-4 col-sm-3 col-md-2"><img src="img/t12.jpg" alt="Tigre"></div>
+        <section id="content" class="row">
+            <div class="col-xs-4 col-sm-3 col-md-2"><img src="img/t1.jpg" alt="Tigre" class="img-thumbnail"></div>
+            <div class="col-xs-4 col-sm-3 col-md-2"><img src="img/t2.jpg" alt="Tigre" class="img-thumbnail"></div>
+            <div class="col-xs-4 col-sm-3 col-md-2"><img src="img/t3.jpg" alt="Tigre" class="img-thumbnail"></div>
+            <div class="col-xs-4 col-sm-3 col-md-2"><img src="img/t4.jpg" alt="Tigre" class="img-thumbnail"></div>
+            <div class="col-xs-4 col-sm-3 col-md-2"><img src="img/t5.jpg" alt="Tigre" class="img-thumbnail"></div>
+            <div class="col-xs-4 col-sm-3 col-md-2"><img src="img/t6.jpg" alt="Tigre" class="img-thumbnail"></div>
+            <div class="col-xs-4 col-sm-3 col-md-2"><img src="img/t7.jpg" alt="Tigre" class="img-thumbnail"></div>
+            <div class="col-xs-4 col-sm-3 col-md-2"><img src="img/t8.jpg" alt="Tigre" class="img-thumbnail"></div>
+            <div class="col-xs-4 col-sm-3 col-md-2"><img src="img/t9.jpg" alt="Tigre" class="img-thumbnail"></div>
+            <div class="col-xs-4 col-sm-3 col-md-2"><img src="img/t10.jpg" alt="Tigre" class="img-thumbnail"></div>
+            <div class="col-xs-4 col-sm-3 col-md-2"><img src="img/t11.jpg" alt="Tigre" class="img-thumbnail"></div>
+            <div class="col-xs-4 col-sm-3 col-md-2"><img src="img/t12.jpg" alt="Tigre" class="img-thumbnail"></div>
         </section>
+        
     
         
         <div class="row">
             <section class="col-sm-4">
-                <h5>Voici les sous-espèces de tigres:</h5><br>
-                <ul>
-                    <li>Tigre de Sibérie</li>
-                    <li>Tigre de Chine méridionale</li>
-                    <li>Tigre de Bali</li>
-                    <li>Tigre d'Indochine</li>
-                    <li>Tigre de Malaisie</li>
-                    <li>Tigre de Java</li>
-                    <li>Tigre de Sumatra</li>
-                    <li>Tigre de Bengal</li>
-                    <li>Tigre de la Caspienne</li>
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Voici les sous-espèces de tigres:</h3>
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <span class="badge">156</span>
+                        Tigre de Sibérie
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge">777</span>
+                        Tigre de Chine méridionale
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge">42</span>
+                        Tigre de Bali
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge">0</span>
+                        Tigre d'Indochine
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge">222</span>
+                        Tigre de Malaisie
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge">69</span>
+                        Tigre de Java
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge">28</span>
+                        Tigre de Sumatra
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge">08</span>
+                        Tigre de Bengal
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge">95</span>
+                        Tigre de la Caspienne
+                    </li>
                 </ul>
+            </div>
             </section>
-            <section class="col-sm-8"><img src="img/photo-tigre.jpg" alt="Tigre"></section>
+            <section class="col-sm-8"><img src="img/photo-tigre.jpg" alt="Tigre" class="img-thumbnail"></section>
         </div>
+        
+       
         
         <div class="row">
             <section class="col-sm-8 table-responsive">
+                <div class="panel panel-primary">
                 <table class="table table-bordered table-striped table-condensed">
-                    <caption><h4>Les menaces pour les tigres</h4></caption>
+                    <div class="panel-heading">
+                        <div class="panel-title"><h4>Les menaces pour les tigres</h4></div>
+                    </div>
                     <thead>
                         <tr>
                             <th>Lieu</th>
@@ -117,10 +210,51 @@
                         </tr>
                     </tbody>
                 </table>
+                </div>
             </section>
+        </div>
+        <div class="row">
+        <section class="col-sm-8">
+          <form class="well">
+            <h4><span class="label label-default">Si vous voulez me laisser un message</span></h4>
+            <h4>Comment m'avez-vous trouvé ?</h4>
+            <fieldset>
+              <div class="radio">
+                <label for="ami" class="radio">
+                  <input type="radio" name="origine" value="ami" id="ami">
+                  Par un ami 
+                </label>
+              </div>
+              <div class="radio">
+                <label for="web" class="radio">
+                  <input type="radio" name="origine" value="web" id="web">
+                  Sur le web 
+                </label>
+              </div>
+              <div class="radio">
+                <label for="hasard" class="radio">
+                  <input type="radio" name="origine" value="hasard" id="hasard">
+                  Par hasard 
+                </label>
+              </div>
+              <div class="radio">
+                <label for="autre" class="radio">
+                  <input type="radio" name="origine" value="autre" id="autre">
+                  Autre... 
+                </label>
+              </div>
+              <label for="textarea">Votre message :</label>
+                <textarea id="textarea" class="form-control" rows="4"></textarea>
+                <p class="help-block">Vous pouvez agrandir la fenêtre</p>
+              <button class="btn btn-primary" type="submit">
+                  <span class="glyphicon glyphicon-ok-sign"></span>
+                  Envoyer</button>
+            </fieldset>
+          </form>
+        </section>
             
             <section class="col-sm-4">
-                <address>
+                <address class="thumbnail">
                     <p>Vous pouvez me contacter à cette adresse :</p>
                         <strong>Tigrou Alfred</strong><br>
                         Allée des fauves<br>
@@ -128,12 +262,12 @@
                 </address>
             </section>
         </div>
-        
-        
     </div>
     
     
     <script src="bootstrap/js/jquery.js"></script>
     <script src="bootstrap/js/bootstrap.js"></script>
+    
+    
 </body>
 </html>
